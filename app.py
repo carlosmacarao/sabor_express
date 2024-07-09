@@ -27,7 +27,7 @@ def escolher_opcao():
             print('Ativando restaurante...')
         case 4:
             finalizar_app()
-        case 5:
+        case any:
             print('Opção inválida!')              
  
 
