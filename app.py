@@ -15,17 +15,20 @@ def finalizar_app():
     os.system('cls')
     print('Finalizando o App \n')
 
-if opcao_escolhida == 1:
-    print('Cadastrando restaurante...')
-elif opcao_escolhida == 2:
-    print('Listando restaurante...')    
-elif opcao_escolhida == 3:
-    print('Ativando restaurante...') 
-else:
-    finalizar_app()       
+def escolher_opcao():
+    if opcao_escolhida == 1:
+        print('Cadastrando restaurante...')
+    elif opcao_escolhida == 2:
+        print('Listando restaurante...')    
+    elif opcao_escolhida == 3:
+        print('Ativando restaurante...') 
+    else:
+        finalizar_app()       
 
 def main():
     exibir_nome_do_programa()
+    exibir_opcoes()
+    escolher_opcao()
 
 if __name__ == '__main__':
     main()
