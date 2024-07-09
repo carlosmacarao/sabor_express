@@ -10,10 +10,12 @@ def exibir_opcoes():
     print('4. Sair \n')
 
 
-
 def finalizar_app():
     os.system('cls')
     print('Finalizando o App! \n')
+
+def opcao_invalida():
+        
 
 def escolher_opcao():
     opcao_escolhida = int(input('Escolha uma opção: '))
@@ -28,7 +30,7 @@ def escolher_opcao():
         case 4:
             finalizar_app()
         case any:
-            print('Opção inválida!')              
+            opcao_invalida()              
  
 
 def main():
