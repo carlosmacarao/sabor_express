@@ -15,7 +15,9 @@ def finalizar_app():
     print('Finalizando o App! \n')
 
 def opcao_invalida():
-        
+    print('Opção inválida!')    
+    input('Digite uma tecla para voltar ao menu inicial: ')
+    main()
 
 def escolher_opcao():
     opcao_escolhida = int(input('Escolha uma opção: '))
@@ -34,6 +36,7 @@ def escolher_opcao():
  
 
 def main():
+    os.system('cls')
     exibir_nome_do_programa()
     exibir_opcoes()
     escolher_opcao()
