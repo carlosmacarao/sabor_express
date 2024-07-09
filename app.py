@@ -9,21 +9,27 @@ def exibir_opcoes():
     print('3. Ativar restaurante')
     print('4. Sair \n')
 
-opcao_escolhida = int(input('Escolha uma opção: '))
+
 
 def finalizar_app():
     os.system('cls')
-    print('Finalizando o App \n')
+    print('Finalizando o App! \n')
 
 def escolher_opcao():
-    if opcao_escolhida == 1:
-        print('Cadastrando restaurante...')
-    elif opcao_escolhida == 2:
-        print('Listando restaurante...')    
-    elif opcao_escolhida == 3:
-        print('Ativando restaurante...') 
-    else:
-        finalizar_app()       
+    opcao_escolhida = int(input('Escolha uma opção: '))
+
+    match opcao_escolhida:
+        case 1:
+            print('Cadastrando restaurante...')
+        case 2:
+            print('Listando restaurante...')
+        case 3:
+            print('Ativando restaurante...')
+        case 4:
+            finalizar_app()
+        case 5:
+            print('Opção inválida!')              
+ 
 
 def main():
     exibir_nome_do_programa()
