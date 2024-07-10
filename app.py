@@ -1,5 +1,9 @@
 import os
 
+restaurantes = [
+
+]
+
 def exibir_nome_do_programa():
     print('𝒮𝒶𝒷ℴ𝓇 ℰ𝓍𝓅𝓇ℯ𝓈𝓈\n');
 
@@ -15,24 +19,31 @@ def finalizar_app():
     print('Finalizando o App! \n')
 
 def opcao_invalida():
-    print('Opção inválida!')    
+    print('\nOpção inválida!')    
     input('Digite uma tecla para voltar ao menu inicial: ')
     main()
 
-def escolher_opcao():
-    opcao_escolhida = int(input('Escolha uma opção: '))
+def cadastrar_novo_restaurante():
+    os.system('cls')   
+    print('Cadastro de novos restaurantes')
 
-    match opcao_escolhida:
-        case 1:
-            print('Cadastrando restaurante...')
-        case 2:
-            print('Listando restaurante...')
-        case 3:
-            print('Ativando restaurante...')
-        case 4:
-            finalizar_app()
-        case any:
-            opcao_invalida()              
+def escolher_opcao():
+    try:
+        opcao_escolhida = int(input('Escolha uma opção: '))
+
+        match opcao_escolhida:
+            case 1:
+                print('Cadastrando restaurante...')
+            case 2:
+                print('Listando restaurante...')
+            case 3:
+                print('Ativando restaurante...')
+            case 4:
+                finalizar_app()
+            case any:
+                opcao_invalida()   
+    except:
+        opcao_invalida()                       
  
 
 def main():
