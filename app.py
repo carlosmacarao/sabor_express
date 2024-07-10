@@ -36,7 +36,13 @@ def cadastrar_novo_restaurante():
 
 def listar_restaurantes():
     os.system('cls')
-    print('======Lista de Restaurantes======')  
+    print('======Lista de Restaurantes====== \n')  
+
+    for restaurante in restaurantes:
+        print('.Restaurante {}'.format(restaurante))
+
+    input('Digite uma tecla para voltar ao menu principal: ')
+    main()
 
 def escolher_opcao():
     try:
