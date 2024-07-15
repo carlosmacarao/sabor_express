@@ -1,9 +1,8 @@
 import os
 
 restaurantes = [
-    'Pizza',
-    'Hamburguer',
-    'Sushi'
+   { 'nome':'Praça', 'categoria':'Japonesa', 'ativo':False},
+   {}
 ]
 
 def exibir_nome_do_programa():
