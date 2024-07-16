@@ -49,8 +49,8 @@ def listar_restaurantes():
     #print('======Lista de Restaurantes====== \n')  
 
     for restaurante in restaurantes:
-        nome_restaurante = restaurante
-        print('.Restaurante {}'.format(restaurante))
+        nome_restaurante = restaurante['nome']
+        print('. {}'.format(nome_restaurante))
 
     voltar_ao_menu_principal()
     
