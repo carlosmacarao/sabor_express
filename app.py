@@ -52,7 +52,7 @@ def listar_restaurantes():
         nome_restaurante = restaurante['nome']
         categoria = restaurante['categoria']
         ativo = restaurante['ativo']
-        print('. {} | {}'.format(nome_restaurante))
+        print('. {} | {} | {}'.format(nome_restaurante, categoria, ativo))
 
     voltar_ao_menu_principal()
     
