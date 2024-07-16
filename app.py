@@ -7,7 +7,7 @@ restaurantes = [
 ]
 
 def exibir_nome_do_programa():
-    print('𝒮𝒶𝒷ℴ𝓇 ℰ𝓍𝓅𝓇ℯ𝓈𝓈\n');
+    print('𝒮𝒶𝒷ℴ𝓇 ℰ𝓍𝓅𝓇ℯ𝓈𝓈\n')
 
 def exibir_opcoes():
     print('1. Cadastrar restaurante')
