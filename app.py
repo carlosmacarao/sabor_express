@@ -50,7 +50,9 @@ def listar_restaurantes():
 
     for restaurante in restaurantes:
         nome_restaurante = restaurante['nome']
-        print('. {}'.format(nome_restaurante))
+        categoria = restaurante['categoria']
+        ativo = restaurante['ativo']
+        print('. {} | {}'.format(nome_restaurante))
 
     voltar_ao_menu_principal()
     
