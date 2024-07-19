@@ -7,7 +7,7 @@ restaurantes = [
 ]
 
 def exibir_nome_do_programa():
-    print('𝒮𝒶𝒷ℴ𝓇 ℰ𝓍𝓅𝓇ℯ𝓈𝓈\n')
+    print('𝒮𝒶𝒷ℴ𝓇 ℰ𝓍𝓅𝓇ℯ𝓈𝓈 \n')
 
 def exibir_opcoes():
     print('1. Cadastrar restaurante')
@@ -16,7 +16,7 @@ def exibir_opcoes():
     print('4. Sair \n')
 
 def voltar_ao_menu_principal():
-    input('\nDigite uma tecla para voltar ao menu inicial: ')
+    input('\n Digite uma tecla para voltar ao menu inicial: ')
     main()
 
 
@@ -26,7 +26,7 @@ def finalizar_app():
 
 
 def opcao_invalida():
-    print('\nOpção inválida!')    
+    print('\n Opção inválida!')    
     voltar_ao_menu_principal()
 
 def exibir_subtitulo(texto):
@@ -54,6 +54,7 @@ def listar_restaurantes():
         ativo = restaurante['ativo']
         print('. {} | {} | {}'.format(nome_restaurante, categoria, ativo))
 
+
     voltar_ao_menu_principal()
     
 
@@ -67,7 +68,7 @@ def escolher_opcao():
             case 2:
                 listar_restaurantes()
             case 3:
-                print('Ativando restaurante..')
+                print('Ativando restaurante...')
             case 4:
                 finalizar_app()
             case any:
