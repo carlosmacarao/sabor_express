@@ -53,7 +53,7 @@ def listar_restaurantes():
     for restaurante in restaurantes:
         nome_restaurante = restaurante['nome']
         categoria = restaurante['categoria']
-        ativo = 'ativado' if restaurante['ativo'] else 'desativado'
+        ativo = 'Ativado' if restaurante['ativo'] else 'Desativado'
         print('. {} | {} | {}'.format(nome_restaurante, categoria, ativo))
 
 
