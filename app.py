@@ -61,6 +61,7 @@ def listar_restaurantes():
 
 def alterar_estado_restaurante():
     exibir_subtitulo('Alterando o estado do restaurante')
+    nome_restaurante = input('Digite o nome do restaurante que deseja alterar o estado: ')
 
 
     voltar_ao_menu_principal()
