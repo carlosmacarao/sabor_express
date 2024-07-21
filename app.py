@@ -10,9 +10,9 @@ def exibir_nome_do_programa():
     print('𝒮𝒶𝒷ℴ𝓇 ℰ𝓍𝓅𝓇ℯ𝓈𝓈 \n')
 
 def exibir_opcoes():
-    print('1. Cadastrar restaurante. ')
-    print('2. Listar restaurante. ')
-    print('3. Ativar restaurante. ')
+    print('1. Cadastrar restaurante ')
+    print('2. Listar restaurante ')
+    print('3. Alterar estado do restaurante ')
     print('4. Sair. \n')
 
 def voltar_ao_menu_principal():
@@ -31,7 +31,10 @@ def opcao_invalida():
 
 def exibir_subtitulo(texto):
     os.system('cls')
+    linha = '*' * (len(texto) + 4)
+    print(linha)
     print(texto)
+    print(linha)
     print()
     
 
