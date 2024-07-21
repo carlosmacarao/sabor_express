@@ -58,6 +58,9 @@ def listar_restaurantes():
 
 
     voltar_ao_menu_principal()
+
+def alterar_estado_restaurante():
+    exibir_subtitulo('Alterando o estado do restaurante')
     
 
 def escolher_opcao():
@@ -70,7 +73,7 @@ def escolher_opcao():
             case 2:
                 listar_restaurantes()
             case 3:
-                print('Ativando restaurante...')
+                alternar_estado_restaurante()
             case 4:
                 finalizar_app()
             case any:
