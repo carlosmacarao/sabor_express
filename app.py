@@ -53,7 +53,7 @@ def listar_restaurantes():
     for restaurante in restaurantes:
         nome_restaurante = restaurante['nome']
         categoria = restaurante['categoria']
-        ativo = restaurante['ativo']
+        ativo = 'ativado' if restaurante['ativo'] else 'desativado'
         print('. {} | {} | {}'.format(nome_restaurante, categoria, ativo))
 
 
@@ -88,7 +88,7 @@ def escolher_opcao():
             case 2:
                 listar_restaurantes()
             case 3:
-                alternar_estado_restaurante()
+                alterar_estado_restaurante()
             case 4:
                 finalizar_app()
             case any:
