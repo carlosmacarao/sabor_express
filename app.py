@@ -26,6 +26,8 @@ def finalizar_app():
 
 
 def opcao_invalida():
+    '''Esta é a função que mostra a opção inválida'''
+    
     print('\n Opção inválida!')    
     voltar_ao_menu_principal()
 
@@ -71,7 +73,7 @@ def listar_restaurantes():
 
 def alterar_estado_restaurante():
     '''Esta é a função responsável por mostrar o status de cada restaurante cadastrado.'''
-    
+
     exibir_subtitulo('Alterando o estado do restaurante')
     nome_restaurante = input('Digite o nome do restaurante que deseja alterar o estado: ')
     restaurante_encontrado = False
@@ -110,6 +112,8 @@ def escolher_opcao():
  
 
 def main():
+    '''FunçÃo principal do programa'''
+
     os.system('cls')
     exibir_nome_do_programa()
     exibir_opcoes()
