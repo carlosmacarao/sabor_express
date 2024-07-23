@@ -30,6 +30,7 @@ def opcao_invalida():
     voltar_ao_menu_principal()
 
 def exibir_subtitulo(texto):
+    '''Essa função é responsável por exibir o subtitulo em cada uma das opções selecionadas'''
     os.system('cls')
     linha = '*' * (len(texto) + 4)
     print(linha)
@@ -40,7 +41,7 @@ def exibir_subtitulo(texto):
 
 def cadastrar_novo_restaurante():
     '''Essa função é responsável por cadastrar um novo restaurante'''
-    
+
     exibir_subtitulo('=======Cadastro de novos restaurantes=======')   
     #print('======Cadastro de novos restaurantes====== \n')
     nome_do_restaurante = input('Digite o nome do restaurante: ')
