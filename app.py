@@ -70,7 +70,8 @@ def listar_restaurantes():
     voltar_ao_menu_principal()
 
 def alterar_estado_restaurante():
-    '''Esta é a função '''
+    '''Esta é a função responsável por mostrar o status de cada restaurante cadastrado.'''
+    
     exibir_subtitulo('Alterando o estado do restaurante')
     nome_restaurante = input('Digite o nome do restaurante que deseja alterar o estado: ')
     restaurante_encontrado = False
