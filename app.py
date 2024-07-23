@@ -31,6 +31,7 @@ def opcao_invalida():
 
 def exibir_subtitulo(texto):
     '''Essa função é responsável por exibir o subtitulo em cada uma das opções selecionadas'''
+
     os.system('cls')
     linha = '*' * (len(texto) + 4)
     print(linha)
@@ -53,6 +54,8 @@ def cadastrar_novo_restaurante():
     
 
 def listar_restaurantes():
+    '''Essa é a função responsável por listar os restaurantes cadastrados.'''
+
     exibir_subtitulo('=======Lista de Restaurantes=======')
     #print('======Lista de Restaurantes====== \n')  
 
@@ -67,6 +70,7 @@ def listar_restaurantes():
     voltar_ao_menu_principal()
 
 def alterar_estado_restaurante():
+    '''Esta é a função '''
     exibir_subtitulo('Alterando o estado do restaurante')
     nome_restaurante = input('Digite o nome do restaurante que deseja alterar o estado: ')
     restaurante_encontrado = False
