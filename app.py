@@ -53,11 +53,12 @@ def listar_restaurantes():
     exibir_subtitulo('=======Lista de Restaurantes=======')
     #print('======Lista de Restaurantes====== \n')  
 
+    print(f'{'Nome do Restaurante'.ljust(20)}')
     for restaurante in restaurantes:
         nome_restaurante = restaurante['nome']
         categoria = restaurante['categoria']
         ativo = 'Ativado' if restaurante['ativo'] else 'Desativado'
-        print('. {} | {} | {}'.format(nome_restaurante, categoria, ativo))
+        print('. {} | {} | {}'.format(nome_restaurante.ljust(20), categoria.ljust(20), ativo))
 
 
     voltar_ao_menu_principal()
