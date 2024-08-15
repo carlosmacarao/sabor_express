@@ -64,7 +64,7 @@ def listar_restaurantes():
     #print('======Lista de Restaurantes====== \n')  
 
     #print(f'{'Nome do Restaurante'.ljust(22)} | {'Categoria'.ljust(20)} | {'Status'}')
-    print(f'{'Nome do Restaurante'.ljust(22)}')
+    print(f'{'Nome do Restaurante'.ljust(22)} | {'categoria'.ljust(20)} | {'Status'}')
     for restaurante in restaurantes:
         nome_restaurante = restaurante['nome']
         categoria = restaurante['categoria']
